@@ -34,14 +34,14 @@ body {
   }
 
   #section1{
-    background: -webkit-gradient(linear, top left, bottom left, from(#fdce9e), to(#f6f3ce));
-    background: -webkit-linear-gradient(#fdce9e, #f6f3ce);
-    background: linear-gradient(#fdce9e,#f6f3ce);
+    background: -webkit-gradient(linear, top left, bottom left, from(#fdce9e), to(#fbf188));
+    background: -webkit-linear-gradient(#fdce9e, #fbf188);
+    background: linear-gradient(#fdce9e,#fbf188);
   }
   #section2{
-      background: -webkit-gradient(linear, top left, bottom left, from(#f6f3ce), to(#bfdefb));
-      background: -webkit-linear-gradient(#f6f3ce, #bfdefb);
-      background: linear-gradient(#f6f3ce,#bfdefb);
+      background: -webkit-gradient(linear, top left, bottom left, from(#fbf188), to(#bfdefb));
+      background: -webkit-linear-gradient(#fbf188, #bfdefb);
+      background: linear-gradient(#fbf188,#bfdefb);
     }
 
 
@@ -57,4 +57,20 @@ body {
     background: -webkit-gradient(linear, top left, bottom left, from(#92a1ca), to(#76c2bd));
     background: -webkit-linear-gradient(#92a1ca, #76c2bd);
     background: linear-gradient(#92a1ca,#76c2bd);
+  }
+
+  a{
+    font-size:1.5em;
+    display:inline;
+    text-decoration: none;
+    color:#d500f9;
+   }
+  .title{
+    font-size: 1.5em;
+    display:inline;
+    color:#ea80fc;
+  }  
+
+  .info{
+    display:inline;
   }
