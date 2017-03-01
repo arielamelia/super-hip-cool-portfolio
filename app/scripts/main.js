@@ -1,7 +1,5 @@
 console.log('\'Allo \'Allo!');
 $(document).ready(function(){
- $('.carousel').carousel();
-
 	$('#demosMenu').change(function(){
 	  window.location.href = $(this).find('option:selected').attr('id') + '.html';
 	});
@@ -48,4 +46,30 @@ $(document).ready(function(){
               console.log('afterLoad--' + 'anchorLink: ' + anchorLink + ' index: ' + index );
             }
           });
+          $('.port-carousel').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  adaptiveHeight: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
 });
