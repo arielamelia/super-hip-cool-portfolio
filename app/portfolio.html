@@ -19,7 +19,6 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/examples.css">
     <!-- endbuild -->
     
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -32,7 +31,6 @@
   <div class="nav-wrapper">
      <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="index.html">Resume</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
      </ul>
   </div>
   </nav>
@@ -41,18 +39,14 @@
   <!--TGAE Website-->
     <div class="slide">
       <div class="intro">
-        <h1 class="animated bounceLeft">TGAE Site</h1>
-        <div class="row">
-            <div class="carousel carousel-slider">
-              <a class="carousel-item" href="#one!"><img src="http://sulley.cah.ucf.edu/~ar787243/dig4104c/images/webtgae01.jpg"></a>
-              <a class="carousel-item" href="#two!"><img src="http://sulley.cah.ucf.edu/~ar787243/dig4104c/images/webtgae02.jpg"></a>
-              <a class="carousel-item" href="#three!"><img src="http://sulley.cah.ucf.edu/~ar787243/dig4104c/images/webtgae03.jpg"></a>
-              <a class="carousel-item" href="#four!"><img src="http://sulley.cah.ucf.edu/~ar787243/dig4104c/images/webtgae04.jpg"></a>
-              <a class="carousel-item" href="#five!"><img src="http://sulley.cah.ucf.edu/~ar787243/dig4104c/images/webtgae05.jpg"></a>
-              <a class="carousel-item" href="#six!"><img src="http://sulley.cah.ucf.edu/~ar787243/dig4104c/images/webtgae06.jpg"></a>
+            <div class="carousel">
+              <a class="carousel-item" href="#one!"><img  id="carousel-img" src="images/tgae01.png"></a> <!--need to add preventdefault and make the material box only initialize onclick-->
+              <a class="carousel-item" href="#two!"><img  id="carousel-img" src="images/tgae02.png"></a>
+              <a class="carousel-item" href="#three!"><img  id="carousel-img" src="images/tgae03.png"></a>
+              <a class="carousel-item" href="#four!"><img  id="carousel-img" src="images/tgae04.png"></a>
+              <a class="carousel-item" href="#five!"><img id="carousel-img" src="images/tgae05.png"></a>
             </div>
 
-        </div>
       </div>
     </div>
     <!--TGAE Branding-->
@@ -104,7 +98,6 @@
     
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <script src="scripts/examples.js"></script>
     <!-- endbuild -->
 
     <script>
@@ -114,53 +107,6 @@
       e.src='https://www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
-   
-   $(document).ready(function(){
-       $('.carousel.carousel-slider').carousel({fullWidth: true});
-       $('#demosMenu').change(function(){
-            window.location.href = $(this).find('option:selected').attr('id') + '.html';
-          });
-          var deleteLog = false;
-          $('#fullpage').fullpage({
-            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-            menu: '#menu',
-            onLeave: function(index, nextIndex, direction){
-              if(deleteLog){
-                $('#callbacksDiv').html('');
-              }
-              $('#callbacksDiv').append('<p>onLeave - index:' + index + ' nextIndex:' + nextIndex + ' direction:' + direction + '</p>')
-              console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " +  direction);
-            },
-            onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
-              if(deleteLog){
-                $('#callbacksDiv').html('');
-              }
-              $('#callbacksDiv').append('<p>onSlideLeave - anchorLink:' + anchorLink + " index:" + index + " slideIndex:" + slideIndex +" direction:" + direction + " nextSlideIndex:" + nextSlideIndex + '</p>');
-              console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
-            },
-            afterRender: function(){
-              $('#callbacksDiv').append('<p>afterRender</p>');
-              console.log("afterRender");
-            },
-            afterResize: function(){
-              $('#callbacksDiv').append('<p>afterResize</p>');
-              console.log("afterResize");
-            },
-            afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
-              $('#callbacksDiv').append('<p>afterSlideLoad - anchorLink:' + anchorLink + " index:" + index + " slideAnchor:" + slideAnchor +" slideIndex:" + slideIndex + '</p>');
-              deleteLog = true;
-              console.log("afterSlideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
-              console.log("----------------");
-            },
-            afterLoad: function(anchorLink, index){
-              $('#callbacksDiv').append('<p>afterLoad - anchorLink:' + anchorLink + " index:" + index + '</p>');
-              deleteLog = true;
-              console.log('===============');
-              console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index );
-            }
-          });
-        });
           </script>
 
   </body>

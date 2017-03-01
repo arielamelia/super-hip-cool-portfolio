@@ -18,7 +18,6 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" type="text/css" href="styles/examples.css" />
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     
@@ -37,7 +36,6 @@
         <li data-menuanchor="firstPage"><a href="#firstPage">Welcome</a></li>
         <li data-menuanchor="secondPage"><a href="#secondPage">Resume</a></li>
         <li data-menuanchor="3rdPage"><a href="#3rdPage">Biography</a></li>
-        <li><a href="index.html">Resume</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
      </ul>
   </div>
@@ -129,49 +127,7 @@
       e.src='https://www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
-    
-    var deleteLog = false;
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-        menu: '#menu',
-        onLeave: function(index, nextIndex, direction){
-          if(deleteLog){
-            $('#callbacksDiv').html('');
-          }
-          $('#callbacksDiv').append('<p>onLeave - index:' + index + ' nextIndex:' + nextIndex + ' direction:' + direction + '</p>')
-          console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " +  direction);
-        },
-        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
-          if(deleteLog){
-            $('#callbacksDiv').html('');
-          }
-          $('#callbacksDiv').append('<p>onSlideLeave - anchorLink:' + anchorLink + " index:" + index + " slideIndex:" + slideIndex +" direction:" + direction + " nextSlideIndex:" + nextSlideIndex + '</p>');
-          console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
-        },
-        afterRender: function(){
-          $('#callbacksDiv').append('<p>afterRender</p>');
-          console.log("afterRender");
-        },
-        afterResize: function(){
-          $('#callbacksDiv').append('<p>afterResize</p>');
-          console.log("afterResize");
-        },
-        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
-          $('#callbacksDiv').append('<p>afterSlideLoad - anchorLink:' + anchorLink + " index:" + index + " slideAnchor:" + slideAnchor +" slideIndex:" + slideIndex + '</p>');
-          deleteLog = true;
-          console.log("afterSlideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
-          console.log("----------------");
-        },
-        afterLoad: function(anchorLink, index){
-          $('#callbacksDiv').append('<p>afterLoad - anchorLink:' + anchorLink + " index:" + index + '</p>');
-          deleteLog = true;
-          console.log('===============');
-          console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index );
-        }
-      });
-    });
+
     </script>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -185,7 +141,6 @@
     
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <script src="scripts/examples.js"</script>
     <!-- endbuild -->
   </body>
 </html>
