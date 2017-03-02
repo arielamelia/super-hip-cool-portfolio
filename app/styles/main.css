@@ -273,37 +273,21 @@ body {
   letter-spacing: -1px;
 }
   #section0{
-    background: -webkit-gradient(linear, top left, bottom left, from(#fbb3b2), to(#fdce9e));
-    background: -webkit-linear-gradient(#fbb3b2, #fdce9e);
-    background: linear-gradient(#fbb3b2,#fdce9e);
+    background: -webkit-gradient(linear, top left, bottom left, from(#05020d), to(#71316d));
+    background: -webkit-linear-gradient(#05020d, #71316d);
+    background: linear-gradient(#05020d,#71316d);
   }
 
   #section1{
-    background: -webkit-gradient(linear, top left, bottom left, from(#fdce9e), to(#fbf188));
-    background: -webkit-linear-gradient(#fdce9e, #fbf188);
-    background: linear-gradient(#fdce9e,#fbf188);
+    background: -webkit-gradient(linear, top left, bottom left, from(#71316d), to(#d17991), to(#1c203d));
+    background: -webkit-linear-gradient(#71316d, #d17991, #1c203d);
+    background: linear-gradient(#71316d, #d17991,#1c203d);
   }
   #section2{
-      background: -webkit-gradient(linear, top left, bottom left, from(#fbf188), to(#bfdefb));
-      background: -webkit-linear-gradient(#fbf188, #bfdefb);
-      background: linear-gradient(#fbf188,#bfdefb);
+      background: -webkit-gradient(linear, top left, bottom left, from(#1c203d), to(#78566e));
+      background: -webkit-linear-gradient(#1c203d, #78566e);
+      background: linear-gradient(#1c203d,#78566e);
     }
-
-
-
-  /*Adding background for the slides
-  * --------------------------------------- */
-  #slide1{
-    background: -webkit-gradient(linear, top left, bottom left, from(#fdce9e), to(#969ac6));
-    background: -webkit-linear-gradient(#fdce9e, #969AC6);
-    background: linear-gradient(#fdce9e,#969AC6);
-  }
-  #slide2{
-    background: -webkit-gradient(linear, top left, bottom left, from(#92a1ca), to(#76c2bd));
-    background: -webkit-linear-gradient(#92a1ca, #76c2bd);
-    background: linear-gradient(#92a1ca,#76c2bd);
-  }
-
   a{
     font-size:1.5em;
     display:inline;
