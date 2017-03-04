@@ -45,33 +45,7 @@ $(document).ready(function(){
               console.log('afterLoad--' + 'anchorLink: ' + anchorLink + ' index: ' + index );
             }
           });
-          $('.port-carousel').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  adaptiveHeight: true,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-$(function () {
-    $('.tlt').textillate();
-})
+				$(function () {
+				    $('.tlt').textillate();
+				})
 });

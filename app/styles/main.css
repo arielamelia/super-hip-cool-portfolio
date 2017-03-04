@@ -270,8 +270,13 @@ p{
 h1{
     font-family: 'Righteous', cursive;
 }
-a{
-
+p,li{
+  font-family: 'Anton', sans-serif;
+}
+a.nav{
+font-family: 'Archivo Black', sans-serif;
+font-size:2 em;
+color:black;
 }
 p{
 
