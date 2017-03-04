@@ -8,7 +8,6 @@ $(document).ready(function(){
           });
           var deleteLog = false;
           $('#fullpage').fullpage({
-            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
             anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
             menu: '#menu',
             onLeave: function(index, nextIndex, direction){

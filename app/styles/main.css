@@ -272,28 +272,36 @@ body {
   line-height: 1;
   letter-spacing: -1px;
 }
-  #section0{
-    background: -webkit-gradient(linear, top left, bottom left, from(#05020d), to(#71316d));
-    background: -webkit-linear-gradient(#05020d, #71316d);
-    background: linear-gradient(#05020d,#71316d);
-  }
 
-  #section1{
-    background: -webkit-gradient(linear, top left, bottom left, from(#71316d), to(#d17991), to(#1c203d));
-    background: -webkit-linear-gradient(#71316d, #d17991, #1c203d);
-    background: linear-gradient(#71316d, #d17991,#1c203d);
+#nav{
+  height: 0px;
+}
+  #section0{
+    background-color:#1de9b6;
   }
   #section2{
-      background: -webkit-gradient(linear, top left, bottom left, from(#1c203d), to(#78566e));
-      background: -webkit-linear-gradient(#1c203d, #78566e);
-      background: linear-gradient(#1c203d,#78566e);
+    background-color:#7BAABE;
     }
-  a{
-    font-size:1.5em;
-    display:inline;
-    text-decoration: none;
-    color:#d500f9;
-   }
+
+  #work-exp{
+    background-color: #F25F9B;
+  }
+  #school-exp{
+    background-color: #FCDE4F;
+  }
+  #skill-exp{
+    background-color: #00D35F;
+  }
+  #tgae-exp{
+    background-color: #E6E7D9;
+  }
+  #lum-exp{
+    background-color: #E6E7D9;
+  }
+  #personal-exp{
+    background-color: #E6E7D9;
+  }
+
   .title{
     font-size: 1.5em;
     display:inline;
