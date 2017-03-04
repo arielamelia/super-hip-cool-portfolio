@@ -250,12 +250,6 @@ p{
   padding: 0.2em 0;
 }
 
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
-}
-
 .hero-unit {
   margin: 50px auto 0 auto;
   width: 300px;
@@ -273,6 +267,15 @@ body {
   letter-spacing: -1px;
 }
 
+h1{
+    font-family: 'Righteous', cursive;
+}
+a{
+
+}
+p{
+
+}
 #nav{
   height: 0px;
 }
