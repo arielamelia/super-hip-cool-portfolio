@@ -268,7 +268,7 @@ p{
 }
 
 h1{
-    font-family: 'Righteous', cursive;
+    font-family: 'Righteous', serif;
 }
 p,li{
   font-family: 'Anton', sans-serif;
@@ -319,3 +319,8 @@ p{
   .info{
     display:inline;
   }
+  .line {
+    fill: none;
+    stroke: purple;
+     stroke-width: 4px;
+   }

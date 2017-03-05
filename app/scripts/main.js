@@ -8,7 +8,7 @@ $(document).ready(function(){
           });
           var deleteLog = false;
           $('#fullpage').fullpage({
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            anchors: ['firstPage', 'secondPage', '3rdPage'],
             menu: '#menu',
             onLeave: function(index, nextIndex, direction){
               if(deleteLog){
@@ -43,7 +43,9 @@ $(document).ready(function(){
               deleteLog = true;
               console.log('===============');
               console.log('afterLoad--' + 'anchorLink: ' + anchorLink + ' index: ' + index );
+							
             }
+
           });
 				$(function () {
 				    $('.tlt').textillate();
