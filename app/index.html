@@ -30,10 +30,6 @@
     <!-- endbuild -->
 
 <link href="https://fonts.googleapis.com/css?family=Anton|Archivo+Black|Righteous" rel="stylesheet">
-		<script src="https://use.fontawesome.com/88b6ece815.js"></script>
-<!--https://www.script-tutorials.com/night-sky-with-twinkling-stars/ background animation idea-->
-<!--http://bl.ocks.org/dbuezas/9306799 pie chart-->
-
 </head>
 <body>
    <nav id="nav">
@@ -49,13 +45,16 @@
   </nav>
 <div id="fullpage">
   <div class="section" id="section0">
-    <h1 class="tlt white-text" data-in-effect="rollIn">Hello</h1>
-      <h2 class="tlt black-text" id="welcome" data-in-effect="rollIn">Web Designer</h2>
-      <i id="welcome" class="fa fa-code fa-3x black-text" aria-hidden="true"></i>
-      <h2  class="tlt black-text" data-in-effect="rollIn" id="welcome"> User Centered Design Consultant </h2>
-      <i id="welcome" class="fa fa-heart-o fa-3x black-text" aria-hidden="true"></i>
-      <h2  class="tlt black-text" data-in-effect="rollIn" id="welcome"> Dog Lover</h2>
-    <a href="#secondPage" id="gobutton" class="waves-effect waves-light btn">I'm Qualified, I Swear</a>
+    <h1 class="tlt black-text" data-in-effect="rollIn">Hello</h1>
+    <h2 class="tlt black-text"  id="welcome" data-in-effect="rollIn">I'm Ariel Helin and I'm a...</h2>
+      <div id="info">
+        <h2 class="tlt black-text" id="welcome" data-in-effect="rollIn">Web Designer</h2>
+        <i id="welcome" class="fa fa-code fa-3x black-text" aria-hidden="true"></i>
+        <h2  class="tlt black-text" data-in-effect="rollIn" id="welcome"> User Centered Design Consultant </h2>
+        <i id="welcome" class="fa fa-heart-o fa-3x black-text" aria-hidden="true"></i>
+        <h2  class="tlt black-text" data-in-effect="rollIn" id="welcome"> Dog Lover</h2>
+      <a href="#secondPage" id="gobutton" class="waves-effect waves-light btn">Let's Take a Journey</a>
+    </div>
   </div>
   <div class="section" id="section1">
     <div class="slide" id="work-exp">
@@ -65,7 +64,7 @@
           <div class="col s1"></div>
           <div class="col s5">
         <div class="animated zoomIn" id="info">
-          <a class="teal-text" id="experience2" href="http://digitalethnography.dm.ucf.edu/pv/PlazaFrancia.htm">PERUDIGITAL</a><h2 class="teal-text text-darken-3" id="experience2"> | RESEARCH ASSISTANT &amp; USER CENTERED DESIGN CONSULTANT</2>
+          <a class="teal-text" id="experience2" href="http://digitalethnography.dm.ucf.edu/pv/PlazaFrancia.htm">PERUDIGITAL</a><h2 class="teal-text text-darken-3" id="experience2"> | RESEARCH ASSISTANT &amp; USER CENTERED DESIGN CONSULTANT</h2>
             <h3 id="experience" class="black-text">September 2016 - Present</h3>
           <ul id="experience">
             <li id="experience">Gamification of multicultural educational material in multiple cohesive narratives</li>
@@ -123,8 +122,8 @@
         <h2 class="yellow-text text-darken-2" id="experience">DUST BUSTER</h2> <h2 class="yellow-text text-darken-3" id="experience">| PROJECT MANAGER</h2>
         <h3 id="experience" class="black-text">February 2016 – May 2016</h3>
         <ul>
-          <li id="experience">Design and creation of branding materials and supplementary materials for events</li>
-          <li id="experience">Leadership role as president, responsible for organizing events, contacting sponsors, and facilitating positive member interactions</li>
+          <li id="experience">Directed team of 6 in the creation of a game prototype</li>
+          <li id="experience">Created and enforced sprint schedules, utilizing </li>
         </ul>
       </div>
     </div>
@@ -143,7 +142,7 @@
       <div class="row">
       <h1 class="animated bounceLeft white-text">Skillsets</h1>
       <div class="col s1"></div>
-      <div class="col s10">
+      <div class="col s10" id="img">
         <div  id="chart"></div>
         <div  id="chart2"></div>
         <div  id="chart3"></div>
@@ -155,22 +154,27 @@
       <div class="intro">
         <h1 class="animated bounceLeft">The Gang's All Ear Website</h1>
         <div class="row">
-          <div class="col s12">
+          <div class="col s3" id="img">
             <a href="images/tgae_home_full.png"  data-lightbox="tgae" >  <img id="car-img" src="images/tgae_home.png"></img>
-            <a href="images/tgae_shop_full.png" data-lightbox="tgae"  ><img id="car-img"  src="images/tgae_shop.png"></img>
-            <a href="images/tgae_about_full.png" data-lightbox="tgae" > <img id="car-img"  src="images/tgae_about.png"></img>
+            </div><div class="col s3" id="img">
+            <a href="images/tgae_shop_full.png" data-lightbox="tgae"  ><img id="car-img-right"  src="images/tgae_shop.png"></img>
+            </div><div class="col s3" id="img">
+            <a href="images/tgae_about_full.png" data-lightbox="tgae" > <img id="car-img-right"  src="images/tgae_about.png"></img>
+            </div><div class="col s3" id="img">
             <a href="images/tgae_contact_full.png" data-lightbox="tgae">  <img id="car-img"  src="images/tgae_contact.png"></img>
+            </div>
+          </div>
           </div>
         </div>
         </div>
-      </div>
-    </div>
+
 <!--Luminositech-->
      <div class="slide" id="lum-exp">
         <div class="intro">
           <h1 class="animated bounceLeft">Luminositech Website</h1>
           <div class="row">
-              <div class="col s12">
+                <div class="col s1"></div>
+              <div class="col s10" id="img">
                 <a href="images/lum_home_full.png" data-lightbox="lum" >  <img id="car-img2" src="images/lum_home.png"></img>
                 <a href="images/lum_shop_full.png" data-lightbox="lum"  > <img id="car-img2" src="images/lum_shop.png"></img>
                 <a href="images/lum_cart_full.png" data-lightbox="lum"  > <img id="car-img2" src="images/lum_cart.png"></img>
@@ -179,28 +183,19 @@
       </div>
     </div>
   </div>
-      <div class="slide" id="personal-exp">
-         <div class="intro">
-           <h1 class="animated bounceLeft">Branding &amp; Business Cards</h1>
-           <div class="row">
-               <div class="col s12">
-                 <a href="images/hannah_logo.png" data-lightbox="logo" >  <img src="images/hannah_logo.png"></img>
 
-           </div>
-         </div>
-       </div>
-
-  </div>
   <div class="section" id="section2">
     <div class="intro">
-    <h1 class="tlt white-text" data-in-effect="rollIn">Please Hire Me:</h1>
-      <i id="social" class="fa fa-envelope-o fa-2x" aria-hidden="true"></i><p id="social"> : arielahelin@gmail.com</p><br>
-      <a class="white-text" id="social" href="https://twitter.com/arielamelia/"><i class="fa fa-twitter-square fa-5x" aria-hidden="true"></i></a>
-      <a class="white-text" id="social" href="https://github.com/arielamelia/"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
-      <a class="white-text" id="social" href="https://linkedin.com/arielamelia/"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+    <h1 class="tlt black-text" data-in-effect="rollIn">Email Me Maybe?:</h1>
+      <div id="social"><i id="social" class="fa fa-envelope-o fa-3x black-text" aria-hidden="true"></i><p id="social" class="black-text"> : arielahelin@gmail.com</p><br></div>
+      <a class="light-blue-text text-darken-2" id="social" href="https://twitter.com/arielahelin/"><i class="fa fa-twitter-square fa-5x" aria-hidden="true"></i></a>
+      <a class="grey-text text-darken-4" id="social" href="https://github.com/arielamelia/"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
+      <a class="blue-text text-darken-4" id="social" href="https://www.linkedin.com/in/ariel-helin-777a9613a/"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
     </div>
   </div>
 </div>
+<script src="https://use.fontawesome.com/88b6ece815.js"></script>
+
 
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
