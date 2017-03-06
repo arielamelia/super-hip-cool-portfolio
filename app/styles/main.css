@@ -279,7 +279,13 @@ h2#experience,a#experience{
   text-align:center;
   display:inline;
 }
-
+h2#experiencesch{
+  font-family: 'Anton', sans-serif;
+  text-align:center;
+  display:inline;
+  font-size:1.4em;
+margin-left:10px;
+}
 a#experience2, h2#experience2{
   font-family: 'Anton', sans-serif;
   text-align:center;
@@ -288,6 +294,9 @@ a#experience2, h2#experience2{
 }
 h3#experience{
   text-align:left;
+}
+a#experience,a#experience2{
+  margin-right:10px;
 }
 h2#welcome{
     font-size: 1.8em;
@@ -337,20 +346,51 @@ display:inline;
 align: center;
 padding:2%;
 }
+#car-img-first{
+display:inline;
+margin:auto;
+max-width:90%;
+margin-left:12.5%;
+}
 #car-img{
 display:inline;
 margin:auto;
-max-width:100%;
+max-width:90%;
 }
 #car-img-right{
 display:inline;
 float:right;
 margin:auto;
-max-width:100%;
+max-width:90%;
+}
+#car-img-right-last{
+display:inline;
+float:right;
+margin:auto;
+max-width:90%;
+margin-right:12.5%;
+}
+#car-img2-first{
+display:inline;
+margin:auto;
+max-width:90%;
 }
 #car-img2{
 display:inline;
-margin-left: 3%;
+max-width:90%
+}
+
+#chart{
+  max-width:100%;
+  margin-left:25%;
+}
+ #chart2{
+  max width:100%;
+  margin-left: 12.5%;
+}
+#chart3{
+  max width:100%;
+  margin-right:30%;
 }
 
   #section0{
