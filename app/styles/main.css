@@ -69,9 +69,7 @@ p{
   margin: 0 auto;
   font-size: 1.5em;
 }
-.section{
-  text-align:center;
-}
+
 #menu li {
   display:inline-block;
   margin: 10px;
@@ -267,38 +265,98 @@ p{
   letter-spacing: -1px;
 }
 
-h1{
+h1,h2,h3{
     font-family: 'Righteous', serif;
+    text-align: center;
 }
 p,li{
   font-family: 'Anton', sans-serif;
+}
+
+h2#experience,a#experience{
+  font-family: 'Anton', sans-serif;
+  font-size:1.5em;
+  text-align:center;
+  display:inline;
+}
+
+a#experience2, h2#experience2{
+  font-family: 'Anton', sans-serif;
+  text-align:center;
+  display:inline;
+  font-size:1.4em;
+}
+h3#experience{
+  text-align:left;
+}
+h2#welcome{
+    font-size: 1.8em;
+    padding:1%;
+}
+#section0{
+  text-align: center;
+}
+div#experience{
+  padding-left:5%;
 }
 a.nav{
 font-family: 'Archivo Black', sans-serif;
 font-size:2 em;
 color:black;
 }
-p{
-
+#gobutton{
+font-family: 'Archivo Black', sans-serif;
+font-size:2 em;
 }
+
 #nav{
   height: 0px;
 }
+#social{
+  display:inline;
+}
+a#social{
+  padding:2%
+}
+
+li#experience{
+  text-align: left;
+  font-size:1.2em;
+}
+
+div#chart, div#chart2, div#chart3{
+font-family: 'Anton', sans-serif;
+display:inline;
+align: center;
+padding:2%;
+}
+#car-img{
+display:inline;
+padding-left:1%;
+}
+#car-img2{
+display:inline;
+padding-left:7%;
+}
   #section0{
-    background-color:#1de9b6;
+    background-image: url("../images/welcomebg.svg");
+    background-position: center;
+    background-color:#F9A2C9;
   }
   #section2{
-    background-color:#7BAABE;
+    background-image: url("../images/contactbg.svg");
+  background-position: center;
+  background-color:#7BAABE;
     }
 
   #work-exp{
-    background-color: #F25F9B;
+    background-color: #72F7D1;
   }
   #school-exp{
-    background-color: #FCDE4F;
+    background-color: #FFE783;
   }
   #skill-exp{
-    background-color: #00D35F;
+    background-color: #C4BCC9;
   }
   #tgae-exp{
     background-color: #E6E7D9;
@@ -309,18 +367,3 @@ p{
   #personal-exp{
     background-color: #E6E7D9;
   }
-
-  .title{
-    font-size: 1.5em;
-    display:inline;
-    color:#ea80fc;
-  }
-
-  .info{
-    display:inline;
-  }
-  .line {
-    fill: none;
-    stroke: purple;
-     stroke-width: 4px;
-   }

@@ -52,16 +52,15 @@ $(document).ready(function(){
 				})
 });
 (function(d3) {
-
+//chart1
       'use strict';
 
 
       var dataProg = [
       {label: 'Photoshop', count: 40},
       {label: 'Illustrator', count: 30},
-      {label: 'Premiere', count: 10},
-      {label: 'InDesign', count: 5},
-      {label: 'Excel', count: 15}
+      {label: 'Premiere', count: 15},
+      {label: 'InDesign', count: 15}
       ];
       var width = 360;
       var height = 360;
@@ -72,7 +71,7 @@ $(document).ready(function(){
 
       var color = d3.scaleOrdinal(d3.schemeCategory20b);
 
-      var svg = d3.select('#chart3')
+      var svg = d3.select('#chart')
         .append('svg')
         .attr('width', width)
         .attr('height', height)
@@ -119,7 +118,7 @@ $(document).ready(function(){
         .attr('x', legendRectSize + legendSpacing)
         .attr('y', legendRectSize - legendSpacing)
         .text(function(d) { return d; });
-
+//Chart2
     'use strict';
 
     var dataFrame = [
@@ -184,6 +183,7 @@ $(document).ready(function(){
       .attr('y', legendRectSize - legendSpacing)
       .text(function(d) { return d; });
 
+//chart3
         'use strict';
 
         var dataCode = [
@@ -201,7 +201,7 @@ $(document).ready(function(){
 
         var color = d3.scaleOrdinal(d3.schemeCategory20b);
 
-        var svg = d3.select('#chart')
+        var svg = d3.select('#chart3')
           .append('svg')
           .attr('width', width)
           .attr('height', height)
